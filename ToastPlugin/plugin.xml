@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.vmr.toastplugin"
+    version="0.0.1">
+    <name>ToastPlugin</name>
+    <description>A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,toast,toastplugin</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/ToastPlugin.js" name="ToastPlugin">
+        <clobbers target="ToastPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ToastPlugin" >
+                <param name="android-package" value="ToastPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/ToastPlugin.java" target-dir="src/" />
+    </platform>
+
+</plugin>

@@ -1,0 +1,19 @@
+{
+    "version": "0.1",
+    "name": "com.vmr.toastplugin",
+    "cordova_name": "Toast Plugin",
+    "description": "Toast Plugin",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "cordova",
+        "toast",
+		"toastplugin"
+    ],
+    "platforms": [
+        "android",
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
